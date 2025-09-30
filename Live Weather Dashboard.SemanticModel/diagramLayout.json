@@ -1,0 +1,177 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 1363.2089232520023,
+        "y": 113.1846204896477
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 2557.6042730000786,
+            "y": 423.26160024410871
+          },
+          "nodeIndex": "Ajmer_Waether",
+          "nodeLineageTag": "2e989ef8-ad34-44ae-bdf4-3c505febd1fe",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2272.6116736551107,
+            "y": 733.96106415040128
+          },
+          "nodeIndex": "All_Weather",
+          "nodeLineageTag": "8268cc90-1c4f-4022-9496-3b4614b9613a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2289.0647592355626,
+            "y": 414.07937685493005
+          },
+          "nodeIndex": "Bangalore_Weather",
+          "nodeLineageTag": "5673232f-1060-4c88-b87a-6c1037cfc9eb",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 501.93984071685657,
+            "y": 618.58217107128939
+          },
+          "nodeIndex": "Current",
+          "nodeLineageTag": "fa85ff54-e456-403d-809b-d4b78c96d4a3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 809.12699725520474,
+            "y": 572.38477082898851
+          },
+          "nodeIndex": "Forecast_days",
+          "nodeLineageTag": "1b16342c-e675-4a19-b287-932464889be0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 59.921271351736351,
+            "y": 573.56457576602315
+          },
+          "nodeIndex": "Forecast_hour",
+          "nodeLineageTag": "8e7f6534-9f90-4af1-9230-d06cb5ccc6ec",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2559.2252154206913,
+            "y": 738.81003873468478
+          },
+          "nodeIndex": "Hyderabad_Weather",
+          "nodeLineageTag": "eb4b0b6e-8a9d-4559-83e2-f4a41ed8b2bc",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2288.8225911544241,
+            "y": 100.08473057897481
+          },
+          "nodeIndex": "Lucknow_Weather",
+          "nodeLineageTag": "d6f27742-7195-4fee-918c-4b39f3c49a2d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2446.8675022003649,
+            "y": 918.14462677077074
+          },
+          "nodeIndex": "Mumbai_Weather",
+          "nodeLineageTag": "cdba480c-dd50-46b1-a0d9-f2a5f8e2ae88",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2551.4337185526756,
+            "y": 97.885970909424458
+          },
+          "nodeIndex": "Noida_Weather",
+          "nodeLineageTag": "f1b1cd83-48c9-48ab-8162-aef9d28fcb7d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 423.22925177275,
+            "y": 274.061462507521
+          },
+          "nodeIndex": "Locations",
+          "nodeLineageTag": "c5e562d8-959a-4515-8a24-bc7f858cbc2a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2783.3039440689549,
+            "y": 492.75798490048123
+          },
+          "nodeIndex": "All Measures",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 40.052554724883258,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

@@ -1,0 +1,184 @@
+relationship 57972056-dcb5-4669-bf7a-9c9c2086f205
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Ajmer_Waether.'location.localtime'
+	toColumn: LocalDateTable_1f9e2ad2-4ad8-4863-965b-b67c6af47b4a.Date
+
+relationship ef6c7318-d596-4cee-b6d3-0d2a11dfee42
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Ajmer_Waether.'current.last_updated'
+	toColumn: LocalDateTable_d68a1c09-c5ad-4fac-9e4a-60201bf0579d.Date
+
+relationship b7286337-14e1-46d6-a524-110353e23b20
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Ajmer_Waether.'forecast.forecastday.date'
+	toColumn: LocalDateTable_c86fdf66-af3b-410e-87f9-7962b9ac3b32.Date
+
+relationship c8ab58ea-951a-4d47-99a5-3ed7b0581ffb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Ajmer_Waether.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_2ade6242-2345-4316-acd3-5758ecc31d14.Date
+
+relationship 6260d21a-df90-4653-89e7-6f7b233461c9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Hyderabad_Weather.'location.localtime'
+	toColumn: LocalDateTable_6cad1791-3425-418b-8b68-73d090780e28.Date
+
+relationship ca846d4e-ed6c-44ba-aed5-0adce80c0be1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Hyderabad_Weather.'current.last_updated'
+	toColumn: LocalDateTable_2379c435-8a9e-4e98-97c6-5fad84345553.Date
+
+relationship 408cefac-b5b3-4f70-b620-bfe8f501055b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Hyderabad_Weather.'forecast.forecastday.date'
+	toColumn: LocalDateTable_220546f9-65ed-4b64-9cc6-78164c8f138b.Date
+
+relationship 15c4bf22-dcf8-4894-8ed1-1327aca92a38
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Hyderabad_Weather.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_4b6a5863-47be-4048-8d79-31ddcf36fc04.Date
+
+relationship c7ade230-5511-4589-91a8-4801f0c53db8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Noida_Weather.'location.localtime'
+	toColumn: LocalDateTable_04a87f0a-b848-4d90-a36a-9c61a642fd4f.Date
+
+relationship cbd2015e-5ba4-4822-b05f-7e2ef942dc17
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Noida_Weather.'current.last_updated'
+	toColumn: LocalDateTable_deaa5c35-adc1-46c2-83bd-3933bfbeaa3e.Date
+
+relationship 541caa8a-f056-44bf-a2e9-1680fa7338d6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Noida_Weather.'forecast.forecastday.date'
+	toColumn: LocalDateTable_b21e5844-a59c-4055-8bb2-8e2d46db2576.Date
+
+relationship b38f9ff1-f43c-473f-94e2-ae44e61f3489
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Noida_Weather.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_20f122fb-cfe2-482a-86d4-0121022a3c55.Date
+
+relationship b5a9eb45-a5cc-4981-9cb9-8a477f198d23
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Lucknow_Weather.'location.localtime'
+	toColumn: LocalDateTable_a447b4b1-5b36-4260-a08b-4d559bc34ff4.Date
+
+relationship 7a973daf-3480-4273-90ac-65516809c9af
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Lucknow_Weather.'current.last_updated'
+	toColumn: LocalDateTable_7d150141-da20-48ea-9b2b-b13bce938a64.Date
+
+relationship e8d71fea-8b6e-415d-af84-9e17067c8dc7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Lucknow_Weather.'forecast.forecastday.date'
+	toColumn: LocalDateTable_c1abcf81-55ae-4dbc-902f-69e674e54cf3.Date
+
+relationship 1d8dbf38-45da-4f4d-b1a8-d518668afb5e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Lucknow_Weather.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_1494abd3-3ad7-4174-aac3-0ed7c43f40d7.Date
+
+relationship 8627c1d4-1fe3-475e-883b-6100f675dc9e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Bangalore_Weather.'location.localtime'
+	toColumn: LocalDateTable_657be2b5-61be-4f05-83a7-5d5b57eb7db2.Date
+
+relationship f5857f4a-b82e-4a95-bd14-4135c1f4da48
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Bangalore_Weather.'current.last_updated'
+	toColumn: LocalDateTable_df1baf5d-d2fb-4390-ba23-9862c25482c6.Date
+
+relationship d18a0061-b987-46a3-b549-f65e89004650
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Bangalore_Weather.'forecast.forecastday.date'
+	toColumn: LocalDateTable_85de77fd-021e-4a91-95b7-7ba5d9f4c0e0.Date
+
+relationship 0ecd71ea-ed81-4932-a24c-d9302ecf8161
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Bangalore_Weather.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_99efe1eb-8081-4739-9a72-ee21a6f845d4.Date
+
+relationship 77ecc483-c6da-4e5c-92f8-e2ace7cab3f1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: All_Weather.'location.localtime'
+	toColumn: LocalDateTable_83777c57-a219-4462-a1b9-49ffdceb40a1.Date
+
+relationship 1db20715-a925-4f9f-85c8-7839d1a90f0f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: All_Weather.'current.last_updated'
+	toColumn: LocalDateTable_4998a66b-59bf-445c-ac23-85e2fe280ae1.Date
+
+relationship 65f6f0e3-e0a1-4956-ab70-eed29ad9ca1a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: All_Weather.'forecast.forecastday.date'
+	toColumn: LocalDateTable_40d30055-45db-42cb-98d9-010862236b8c.Date
+
+relationship 703e38c5-a9d9-4576-8ef9-5b0ef94ae343
+	joinOnDateBehavior: datePartOnly
+	fromColumn: All_Weather.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_a5227a4d-e2b9-4720-996c-d57862248668.Date
+
+relationship 62e560fe-8bb4-49e6-bbf6-6d76374d7e5e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Mumbai_Weather.'location.localtime'
+	toColumn: LocalDateTable_d14157b8-87f6-4bc3-9848-3daaa8a94498.Date
+
+relationship 56172bab-3b20-4d17-ad68-40c67bb2fc5d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Mumbai_Weather.'current.last_updated'
+	toColumn: LocalDateTable_10e3a124-135b-46fa-993e-cfaa04d499d0.Date
+
+relationship 867fb381-0f0f-4171-9b4f-8bcdfcb718b3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Mumbai_Weather.'forecast.forecastday.date'
+	toColumn: LocalDateTable_82063a93-f9a5-44af-8652-47814169330d.Date
+
+relationship 029077cf-fe14-46a0-b7bd-1bb8b246b843
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Mumbai_Weather.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_60364174-4a93-4c32-9eb2-9eddadc0228d.Date
+
+relationship b7173895-8bfc-4300-b780-72686063dd37
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Current.'location.localtime'
+	toColumn: LocalDateTable_0e9604a5-cb82-4dfd-8642-fc76f981ea8c.Date
+
+relationship e589ae9e-426a-4708-8c88-62a9a606dbc5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Current.'current.last_updated'
+	toColumn: LocalDateTable_05718ad4-6996-43c4-9bcc-6c03eafe1c97.Date
+
+relationship e08da79f-8fba-4172-a1f4-c7a50e9fa60e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Forecast_days.'location.localtime'
+	toColumn: LocalDateTable_d58df626-6818-41dc-a468-6bd8ab881cb6.Date
+
+relationship 07f33e28-260c-4194-8d7b-6d3d3c3001d0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Forecast_days.'forecast.forecastday.date'
+	toColumn: LocalDateTable_01825919-d56f-4aea-a8b7-324b8d11f5cb.Date
+
+relationship 73c75e4e-1c7c-4853-bd06-c13f82c2067a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Forecast_hour.'location.localtime'
+	toColumn: LocalDateTable_d90a8a66-03c2-4b18-bd88-67422c09b0c3.Date
+
+relationship 6a3b037e-05c6-4deb-b44b-ca3ebb5750db
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Forecast_hour.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_bf6eb77f-7fe1-472e-97ae-40b1818ce534.Date
+
+relationship 085471eb-4b95-f802-b962-f19d05f914f8
+	fromColumn: Forecast_hour.'location.name'
+	toColumn: Locations.'location.name'
+
+relationship 792c3037-74fa-715e-2116-ddbb440a7f2e
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Current.'location.name'
+	toColumn: Locations.'location.name'
+
+relationship 6260db4b-ab63-e6dc-d7e0-c6e3bbb4f951
+	fromColumn: Forecast_days.'location.name'
+	toColumn: Locations.'location.name'
+

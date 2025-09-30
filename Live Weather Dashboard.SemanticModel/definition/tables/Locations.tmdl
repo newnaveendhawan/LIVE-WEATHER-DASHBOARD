@@ -1,0 +1,17 @@
+table Locations
+	lineageTag: c5e562d8-959a-4515-8a24-bc7f858cbc2a
+
+	column 'location.name'
+		lineageTag: d04156bf-eba3-450d-ac87-56143e37069b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Current[location.name]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Locations = calculated
+		mode: import
+		source = SUMMARIZE('Current', 'Current'[location.name])
+
+	annotation PBI_Id = bdef901c6c854275856f5f8d4b7153e2
+

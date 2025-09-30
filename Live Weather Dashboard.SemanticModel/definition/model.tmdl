@@ -1,0 +1,66 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Ajmer_Waether","Hyderabad_Weather","Noida_Weather","Lucknow_Weather","Bangalore_Weather","All_Weather","Mumbai_Weather","Current","Forecast_days","Forecast_hour"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.145.1457.0 (25.07)+6e87ffa743c5aa106a85a0b5e383d76d522045ba
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Ajmer_Waether
+ref table DateTableTemplate_6e9c0107-efb6-44ab-819a-023bb2b4ce14
+ref table LocalDateTable_1f9e2ad2-4ad8-4863-965b-b67c6af47b4a
+ref table LocalDateTable_d68a1c09-c5ad-4fac-9e4a-60201bf0579d
+ref table LocalDateTable_c86fdf66-af3b-410e-87f9-7962b9ac3b32
+ref table LocalDateTable_2ade6242-2345-4316-acd3-5758ecc31d14
+ref table Hyderabad_Weather
+ref table LocalDateTable_6cad1791-3425-418b-8b68-73d090780e28
+ref table LocalDateTable_2379c435-8a9e-4e98-97c6-5fad84345553
+ref table LocalDateTable_220546f9-65ed-4b64-9cc6-78164c8f138b
+ref table LocalDateTable_4b6a5863-47be-4048-8d79-31ddcf36fc04
+ref table Noida_Weather
+ref table LocalDateTable_04a87f0a-b848-4d90-a36a-9c61a642fd4f
+ref table LocalDateTable_deaa5c35-adc1-46c2-83bd-3933bfbeaa3e
+ref table LocalDateTable_b21e5844-a59c-4055-8bb2-8e2d46db2576
+ref table LocalDateTable_20f122fb-cfe2-482a-86d4-0121022a3c55
+ref table Lucknow_Weather
+ref table LocalDateTable_a447b4b1-5b36-4260-a08b-4d559bc34ff4
+ref table LocalDateTable_7d150141-da20-48ea-9b2b-b13bce938a64
+ref table LocalDateTable_c1abcf81-55ae-4dbc-902f-69e674e54cf3
+ref table LocalDateTable_1494abd3-3ad7-4174-aac3-0ed7c43f40d7
+ref table Bangalore_Weather
+ref table LocalDateTable_657be2b5-61be-4f05-83a7-5d5b57eb7db2
+ref table LocalDateTable_df1baf5d-d2fb-4390-ba23-9862c25482c6
+ref table LocalDateTable_85de77fd-021e-4a91-95b7-7ba5d9f4c0e0
+ref table LocalDateTable_99efe1eb-8081-4739-9a72-ee21a6f845d4
+ref table All_Weather
+ref table LocalDateTable_83777c57-a219-4462-a1b9-49ffdceb40a1
+ref table LocalDateTable_4998a66b-59bf-445c-ac23-85e2fe280ae1
+ref table LocalDateTable_40d30055-45db-42cb-98d9-010862236b8c
+ref table LocalDateTable_a5227a4d-e2b9-4720-996c-d57862248668
+ref table Mumbai_Weather
+ref table LocalDateTable_d14157b8-87f6-4bc3-9848-3daaa8a94498
+ref table LocalDateTable_10e3a124-135b-46fa-993e-cfaa04d499d0
+ref table LocalDateTable_82063a93-f9a5-44af-8652-47814169330d
+ref table LocalDateTable_60364174-4a93-4c32-9eb2-9eddadc0228d
+ref table Current
+ref table LocalDateTable_0e9604a5-cb82-4dfd-8642-fc76f981ea8c
+ref table LocalDateTable_05718ad4-6996-43c4-9bcc-6c03eafe1c97
+ref table Forecast_days
+ref table LocalDateTable_d58df626-6818-41dc-a468-6bd8ab881cb6
+ref table LocalDateTable_01825919-d56f-4aea-a8b7-324b8d11f5cb
+ref table Forecast_hour
+ref table LocalDateTable_d90a8a66-03c2-4b18-bd88-67422c09b0c3
+ref table LocalDateTable_bf6eb77f-7fe1-472e-97ae-40b1818ce534
+ref table Locations
+ref table 'All Measures'
+
+ref cultureInfo en-US
+

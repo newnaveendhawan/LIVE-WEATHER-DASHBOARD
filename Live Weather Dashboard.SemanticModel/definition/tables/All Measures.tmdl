@@ -1,0 +1,176 @@
+table 'All Measures'
+	lineageTag: 6dde5ba6-506d-4fd5-92f9-1bd8c47d8a08
+
+	measure Curr_Temp_C = sum('Current'[current.temp_c])& " °C"
+		lineageTag: 3bacc4dd-15e9-4af7-a986-820d3ecef698
+
+	measure Last_Updated_date_Curr = "Last Updated, "&FORMAT(FIRSTNONBLANK('Current'[current.last_updated],""), "dd mmm")
+		lineageTag: 46cf2c96-3214-4439-960d-78daab6f1623
+
+	measure Wind_Speed = sum('Current'[current.wind_kph])& " kph"
+		lineageTag: 80fef7d3-5d10-4677-bf12-b7680a1744cd
+
+	measure humidity = sum('Current'[current.humidity]) & " %"
+		lineageTag: 38a8ab61-1227-41f3-8233-c3c857a599c7
+
+	measure Pressure_mb = sum('Current'[current.pressure_mb]) & " mb"
+		lineageTag: 4bbca198-340c-4b22-ba43-1842946a7de1
+
+	measure Precipitation = sum('Current'[current.precip_mm]) & " mm"
+		lineageTag: 4699aac4-fcf3-4f84-98ea-b4dd4be7efd3
+
+	measure Visibility = sum('Current'[current.vis_km]) & " km"
+		lineageTag: 89ff4dcd-beff-4cf8-8b45-148e4fb184a6
+
+	measure For_Curr_Temp_C = AVERAGE(Forecast_days[forecast.forecastday.day.avgtemp_c])& " °C"
+		lineageTag: ec6eb02d-738a-4670-861d-93242f2f90ac
+
+	measure Left_Value_rain = 100 - SUM(Forecast_days[forecast.forecastday.day.daily_chance_of_rain])
+		formatString: 0
+		lineageTag: 2649efd0-36e5-48e4-a753-bc792a3a0821
+
+	measure 'PM10 Color' =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.pm10]),0)
+			RETURN
+			SWITCH(
+			TRUE(),
+			AQI <= 50, "#43d946",
+			AQI <= 100, "#fff570",
+			AQI <= 150, "#ff9800",
+			AQI <= 200, "#d99343",
+			AQI <= 300, "#ff5b0f",
+			"#d95243"
+			)
+		lineageTag: c97d13ff-b5b2-4d47-bd62-1e94fa69ad25
+
+	measure 'CO color' =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.co]),0)
+			RETURN
+			SWITCH(
+			TRUE(),
+			AQI <= 50, "#43d946",
+			AQI <= 100, "#fff570",
+			AQI <= 150, "#ff9800",
+			AQI <= 200, "#d99343",
+			AQI <= 300, "#ff5b0f",
+			"#d95243"
+			)
+		lineageTag: e7734df2-5709-4112-a739-73f37e078adb
+
+	measure 'SO2 Color' =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.so2]),0)
+			RETURN
+			SWITCH(
+			TRUE(),
+			AQI <= 50, "#43d946",
+			AQI <= 100, "#fff570",
+			AQI <= 150, "#ff9800",
+			AQI <= 200, "#d99343",
+			AQI <= 300, "#ff5b0f",
+			"#d95243"
+			)
+		lineageTag: 588b5001-0fcf-41f2-9612-26a100e898e8
+
+	measure 'O3 Color TEMPLATE' =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.o3]),0)
+			RETURN
+			SWITCH(
+			TRUE(),
+			AQI <= 50, "#43d946",
+			AQI <= 100, "#fff570",
+			AQI <= 150, "#ff9800",
+			AQI <= 200, "#d99343",
+			AQI <= 300, "#ff5b0f",
+			"#d95243"
+			)
+		lineageTag: 86595306-889f-46df-8161-b255f600d6b7
+
+	measure 'PM2.5 Color TEMPLATE' =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.pm2_5]),0)
+			RETURN
+			SWITCH(
+			TRUE(),
+			AQI <= 50, "#43d946",
+			AQI <= 100, "#fff570",
+			AQI <= 150, "#ff9800",
+			AQI <= 200, "#d99343",
+			AQI <= 300, "#ff5b0f",
+			"#d95243"
+			)
+		lineageTag: eb9b489f-6146-403b-aa21-4ff52252b874
+
+	measure 'NO2 Color TEMPLATE' =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.no2]),0)
+			RETURN
+			SWITCH(
+			TRUE(),
+			AQI <= 50, "#43d946",
+			AQI <= 100, "#fff570",
+			AQI <= 150, "#ff9800",
+			AQI <= 200, "#d99343",
+			AQI <= 300, "#ff5b0f",
+			"#d95243"
+			)
+		lineageTag: 624da19c-d6ee-4fe4-9a67-99888772effc
+
+	measure Max_Value = 300
+		formatString: 0
+		lineageTag: edf673bd-4d92-449d-bba2-3e01653aeaf0
+
+	measure LeftValue_PM10 = [Max_Value] - SUM('Current'[current.air_quality.pm10])
+		formatString: 0
+		lineageTag: 35cf097c-7e60-4338-bdac-fc791f9187e5
+
+	measure 'AQI Status' =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.pm10]),0)
+			RETURN
+			SWITCH(
+			TRUE(),
+			AQI <= 50, "Good",
+			AQI <= 100, "Moderate",
+			AQI <= 150, "Unhealthy for Sensitive",
+			AQI <= 200, "Unhealthy",
+			AQI <= 300, "Very Unhealthy",
+			"Hazardous"
+			)
+		lineageTag: 5af9eaf4-b44e-4291-968e-158735af9dad
+
+	measure 'AQI Suggestion' =
+			
+			VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.pm10]),0)
+			RETURN
+			SWITCH(
+			TRUE(),
+			AQI <= 50, "Air is clean and healthy",
+			AQI <= 100, "Acceptable air quality, stay active",
+			AQI <= 150, "Sensitive groups should reduce outdoor time",
+			AQI <= 200, "Limit prolonged outdoor exertion",
+			AQI <= 300, "Avoid outdoor activity if possible",
+			"Stay indoors, wear a mask if outside"
+			)
+		lineageTag: 89cc0a82-f4a8-4e19-a490-289ecdecfa3f
+
+	column Column
+		formatString: 0
+		lineageTag: 4a5bfe7b-a568-43a8-9cee-9148fec6c059
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'All Measures' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = a7a279f44ae7439b9b809dee61a19929
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+
